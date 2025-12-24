@@ -15,8 +15,8 @@ export function renderCloze(text: string, ordinal: number, showAnswer: boolean):
     const currentOrd = parseInt(cardOrd);
     if (currentOrd === ordinal) {
       return showAnswer 
-        ? `<span class="bg-blue-600 text-white font-bold px-2 py-0.5 rounded shadow-sm scale-105 inline-block transition-all">${content}</span>`
-        : `<span class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 border-b-2 border-blue-500 px-4 rounded animate-pulse cursor-help font-bold text-sm" title="${hint || 'Javobni ko\'rish uchun bosing'}">[${hint || '...'}]</span>`;
+        ? `<span class="bg-blue-600 text-white font-bold px-2 py-0.5 rounded shadow-sm transition-all">${content}</span>`
+        : `<span class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 border-b-2 border-blue-500 px-4 rounded animate-pulse cursor-help font-bold text-sm" title="${hint || 'Javobni ko\'rish'}">[${hint || '...'}]</span>`;
     }
     return content;
   });
@@ -54,21 +54,21 @@ export const MOTIVATION_DATA = {
       source: "Hadisi Sharif"
     },
     {
-      text: "Ilm – bu nurdir, Alloh uni istagan bandasining qalbiga soladi.",
-      translation: "Haqiqiy bilim qalbni yorituvchi ilohiy ne'matdir.",
-      source: "Imom Shofiiy"
-    },
-    {
       text: "Kim ilm yo'lini tutsa, Alloh unga jannat yo'lini oson qiladi.",
       translation: "Bilim sari tashlangan har bir qadam saodatga elitadi.",
       source: "Hadisi Sharif"
+    },
+    {
+      text: "Ilm – bu nurdir, Alloh uni istagan bandasining qalbiga soladi.",
+      translation: "Haqiqiy bilim qalbni yorituvchi ilohiy ne'matdir.",
+      source: "Imom Shofiiy"
     }
   ],
   tips: [
     "Har kuni kamida 15 daqiqa takrorlashni odat qiling.",
-    "Uyqudan oldin yangi kartalarni ko'rib chiqish xotirani mustahkamlaydi.",
+    "Uyqudan oldin kartalarni ko'rib chiqish xotirani mustahkamlaydi.",
     "Mantiqiy bog'liqliklar yarating, quruq yodlashdan qoching.",
-    "Eng qiyin kartalarga ko'proq e'tibor bering, 'Again' tugmasidan qo'rqmang.",
+    "Eng qiyin kartalarga ko'proq e'tibor bering.",
     "Ilmni boshqalarga o'rgatish – uni mustahkamlashning eng yaxshi yo'li."
   ]
 };
